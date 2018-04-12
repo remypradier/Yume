@@ -1,0 +1,65 @@
+.zone-a {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  margin: rem(20) auto;
+  .zone-a__nav {
+    float: right;
+    margin-bottom: rem(40);
+    width: 80%;
+    margin-left: 15%;
+    border: rem(1) solid $main-orange;
+    box-shadow: 0 0 rem(10) 0 $main-orange, inset 0 0 rem(10) 0 $main-orange;
+  }
+  .zone-a__nav__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: rem(20) 0;
+  }
+  .zone-a__nav__link {
+    list-style: none;
+    color: $white;
+    font-size: rem(45);
+    text-transform: uppercase;
+    font-family: $font-medium;
+    text-shadow: 0 0 20px $white, 0 0 8px $white;
+  }
+  .zone-a__logo {
+    margin-top: -5.8%;
+    padding: rem(30) 0;
+    width: 11%;
+    min-height: rem(350);
+    border: rem(1) solid $main-orange;
+    box-shadow: 0 0 rem(10) 0 $main-orange, inset 0 0 rem(10) 0 $main-orange;
+  }
+  .zone-a__content {
+    width: 80%;
+    margin-left: 15%;
+    margin-top: -15%;
+    height: rem(350);
+    border: rem(1) solid $main-orange;
+    box-shadow: 0 0 rem(10) 0 $main-orange, inset 0 0 rem(10) 0 $main-orange;
+  }
+  .zone-a__content__text {
+    color: $white;
+    font-size: rem(50);
+    font-family: $font-regular;
+    padding: rem(20) rem(50);
+    text-align: center;
+    text-shadow: 0 0 20px $white, 0 0 8px $white;
+  }
+  .zone-a__logo__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: rem(455);
+  }
+  .zone-a__logo__span {
+    font-family: $font-medium;
+    font-size: rem(70);
+    color: $main-orange;
+    text-transform: uppercase;
+  }
+}
