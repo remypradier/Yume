@@ -1,0 +1,17 @@
+.zone-c {
+
+  margin: 0 auto 6rem;
+  padding-bottom: 6rem;
+
+  .masselot-item {
+    width: 32.5%;
+    padding: 1rem 2rem;
+    border: .3rem solid $color-primary;
+    // box-shadow: 0 0 20px 0 #ff9d4b, inset 0 0 20px 0 #ff9d4b;
+    box-shadow: 0 0 20px 0 $color-primary, inset 0 0 20px 0 $color-primary;
+  }
+
+  .masselot-subtitle {
+    margin-bottom: 0;
+  }
+}
