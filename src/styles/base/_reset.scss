@@ -1,0 +1,35 @@
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: rem($px-base);
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  color: black;
+  &:focus,
+  &:hover {
+    color: black;
+  }
+}
+figure {
+  margin: 0;
+}
+
+.sprite {
+  &,
+  svg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+}
