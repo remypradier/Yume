@@ -1,20 +1,22 @@
 # Yume
 
-### How to Install
+[yume.netlify.com](https://yume.netlify.com/)
 
-Use `npm install` to install the project's dependencies.
+### Installation
+
+Utilisez `npm install` pour installer les dépendances du projet
 ```bash
 npm install
 ```
 
-### How to run
+### Execution
 
-For development:
+Développement:
 ```
 npm run dev
 ```
 
-Build for Production:
+Production:
 ```
 npm run build
 ```
