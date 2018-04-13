@@ -1,0 +1,45 @@
+.footer {
+  margin-top: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.footer::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: red;
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__CTA {
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0 2rem #ffffff, 0 0 .8rem #ffffff;
+  font-family: "Klavika-regular";
+}
+
+.footer__title {
+  font-size: 3.6rem;
+  margin: 1em 0 0 0;
+}
+
+.footer__subtitle {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.footer__CTA {
+  margin: 2em 0 3em 0;
+  padding: 2rem 7rem;
+  font-size: 2.8rem;
+  //border: .3rem solid $color-primary;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 #ff9d4b, inset 0 0 10px 0 #ff9d4b;
+  background: #ff9d4b;
+  border: .3rem solid #ff9d4b;
+  text-shadow: 0 0 2rem #ffffff, 0 0 .8rem #ffffff;
+}
