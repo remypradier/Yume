@@ -45,6 +45,13 @@
 
         .masselot-text {
           width: 45%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .masselot-subtitle {
+          margin: 0 0 2rem;
         }
       }
     }
@@ -63,6 +70,7 @@
 
         .masselot-text {
           width: 100%;
+          display: block;
         }
       }
     }
@@ -116,6 +124,10 @@
   @include tablet-max {
     flex-flow: column;
   }
+
+  @include mobile {
+    align-items: center;
+  }
 }
 
 .masselot-item{
@@ -128,6 +140,10 @@
   @include tablet-max {
     width: 100%;
     margin: 3rem 0;
+  }
+
+  @include mobile {
+    max-width: 100%;
   }
 
   .masselot-item:last-child {
