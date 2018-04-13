@@ -9,11 +9,28 @@ var slider = new Swiper('.swiper-container', {
   grabCursor: true,
   loop: true,
   navigation: {
-    nextEl: '.swiper-slide-next',
-    prevEl: '.swiper-slide-prev'
-  },
-  breakpoints :{
-    768:{
-    }
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   }
 });
+/*
+var next = document.querySelector('.swiper-slide-next');
+var prev = document.querySelector('.swiper-slide-prev');
+
+next.addEventListener('click', function(){
+  slider.slideNext(1000);
+  next = document.querySelector('.swiper-slide-next');
+  prev = document.querySelector('.swiper-slide-prev');
+})
+
+prev.addEventListener('click', function(){
+  slider.slidePrev(1000);
+  next = document.querySelector('.swiper-slide-next');
+  prev = document.querySelector('.swiper-slide-prev');
+})
+
+slider.on('slideChange', function () {
+  next = document.querySelector('.swiper-slide-next');
+  prev = document.querySelector('.swiper-slide-prev');
+});
+*/
