@@ -9,9 +9,16 @@
     border: .3rem solid $color-primary;
     // box-shadow: 0 0 20px 0 #ff9d4b, inset 0 0 20px 0 #ff9d4b;
     box-shadow: 0 0 20px 0 $color-primary, inset 0 0 20px 0 $color-primary;
+
+    @include tablet-max {
+      width: 100%;
+      // border: none;
+      // box-shadow: none;
+    }
   }
 
   .masselot-subtitle {
+    font-size: 3rem;
     margin-bottom: 0;
   }
 }
