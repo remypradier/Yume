@@ -1,6 +1,7 @@
 .swiper-container {
-  margin: 0 0 0 -250px !important;
-  height: 450px;
+  height: 350px;
+  width: 150vw !important;
+  margin:  0 0 0 -25vw !important;
 }
 
 .swiper-wrapper{
@@ -12,11 +13,6 @@
     }
 
 .swiper-slide {
-
-  margin: 0 50px;
-
-  width: 60em !important;
-  //-webkit-transition: width 2s; /* Safari */
   transition: width 0.5s !important;
   display: flex;
   align-items: center;
@@ -24,16 +20,12 @@
 
 .swiper-slide .slide {
   transition: height 0.5s !important;
-  height: 50%;
+  height: 60%;
   display: flex;
 }
 
-.swiper-slide-active {
-  width: 90em !important;
-}
-
 .swiper-slide-active .slide {
-  height: 80%;
+  height: 100%;
 }
 
 .zone-e {
@@ -46,6 +38,7 @@
 .zone-e__title {
   font-size: 20px;
   text-transform: uppercase;
+  margin: 0 0 2em 0;
 }
 
 .zone-e__title {
@@ -54,6 +47,7 @@
 
 .zone-e .card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 8px;
   border: .3rem solid #ff9d4b;
@@ -66,9 +60,6 @@
 
 .zone-e .card__content {
   width: 70%;
-}
-
-.zone-e .card__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,46 +74,22 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1024px) {
-
-  .swiper-container {
-    margin: 0 0 0 -300px !important;
-    height: 250px;
-  }
-
-  .swiper-slide {
-    margin: 0 25px;
-    width: 40em !important;
-  }
-
-  .swiper-slide .slide {
-    height: 65%;
-  }
-
-  .swiper-slide-active {
-    width: 55em !important;
-  }
-
-  .swiper-slide-active .slide {
-    height: 80%;
-  }
-
-}
-
 @media (max-width: 768px) {
   .swiper-container {
-    margin: 0  0 0 -230px !important;
+    height: auto;
+  }
+
+  .zone-e .card__img {
+    width: 100%;
     height: 250px;
   }
 
-  .swiper-slide,
-  .swiper-slide-active {
-    margin: 0 3%;
-    width: 55% !important;
+  .zone-e .card__content {
+    width: 90%;
   }
 
-  .swiper-slide .slide,
-  .swiper-slide-active .slide {
-    height: 100%;
+  .zone-e .card__content .content__title,
+  .zone-e .card__content .content__paragraph {
+    margin: 0 0 0.5em 0;
   }
 }
