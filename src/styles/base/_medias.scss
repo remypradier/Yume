@@ -8,9 +8,11 @@ $media-query: "only screen and";
 $mobile: "#{$media-query} (max-width: #{$breakpoint-tablet - 1})";
 $phablet: "#{$media-query} (min-width: #{$breakpoint-phablet})";
 $tablet: "#{$media-query} (min-width: #{$breakpoint-tablet})";
-$tablet-max: "#{$media-query} (max-width: #{$breakpoint-desktop - 1})";
+$tablet-max: "#{$media-query} (max-width: 768px)";
+$desktop-masselot: "#{$media-query} (max-width: 1280px)";
 $tablet-only: "#{$media-query} (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1})";
 $desktop: "#{$media-query} (min-width: #{$breakpoint-desktop})";
+$desktop-max: "#{$media-query} (max-width: #{$breakpoint-desktop})";
 $desktop-header: "#{$media-query} (min-width: #{$breakpoint-desktop-header})";
 $desktop-xl: "#{$media-query} (min-width: #{$breakpoint-desktop-xl})";
 
@@ -47,6 +49,16 @@ $desktop-xl: "#{$media-query} (min-width: #{$breakpoint-desktop-xl})";
 }
 @mixin desktop {
   @media #{$desktop} {
+    @content;
+  }
+}
+@mixin desktop-max {
+  @media #{$desktop-max} {
+    @content;
+  }
+}
+@mixin desktop-masselot-max {
+  @media #{$desktop-masselot} {
     @content;
   }
 }

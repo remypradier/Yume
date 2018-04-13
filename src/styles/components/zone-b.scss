@@ -1,0 +1,160 @@
+.zone-b, .zone-c {
+  padding: 6.5rem 2rem 3.5rem;
+  width: 90%;
+  max-width: 130rem;
+  background: pink;
+  font-family: $font-regular;
+  border: .3rem solid $color-primary;
+  box-shadow: 0 0 2rem 0 $color-primary;
+  text-shadow: 0 0 2rem #ffffff, 0 0 .8rem #ffffff;
+  color: #fff;
+
+  @include tablet-max {
+    padding: 4rem 1.5rem 2rem;
+  }
+}
+
+.zone-b {
+  margin: 6rem auto;
+
+  .masselot-item {
+    max-width: 35rem;
+
+    @include desktop-masselot-max {
+      max-width: 30rem;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @include desktop-max {
+      max-width: 100%;
+      width: 45%;
+
+      &:last-child {
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .zone-b__img {
+          width: 45%;
+        }
+
+        .masselot-text {
+          width: 45%;
+        }
+      }
+    }
+
+    @include tablet-max {
+      // max-width: 40rem;
+      max-width: 100%;
+      width: 100%;
+
+      &:last-child {
+        display: block;
+
+        .zone-b__img {
+          width: 100%;
+        }
+
+        .masselot-text {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .masselot-container {
+    // align-items: center;
+
+    @include desktop-max {
+      flex-flow: row wrap;
+    }
+  }
+}
+
+.masselot-title, .masselot-subtitle {
+  text-transform: uppercase;
+}
+
+.masselot-title {
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 5.5rem;
+
+  @include tablet-max {
+    margin-bottom: 3.5rem;
+    font-size: 3rem;
+  }
+
+  @include mobile {
+    margin-bottom: 2rem;
+  }
+}
+
+.masselot-subtitle {
+  margin-top: .5rem;
+  font-size: 3.1rem;
+
+  @include desktop-masselot-max {
+    font-size: 2.7rem;
+  }
+
+  @include tablet-max {
+    margin-bottom: 1rem;
+  }
+}
+
+.masselot-container {
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet-max {
+    flex-flow: column;
+  }
+}
+
+.masselot-item{
+  width: 33%;
+
+  @include desktop-masselot-max {
+    max-width: 30rem;
+  }
+
+  @include tablet-max {
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  .masselot-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.zone-b__img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 3rem;
+  border: .3rem solid $color-primary;
+  box-shadow: 0 0 20px 0 $color-primary, inset 0 0 20px 0 $color-primary;
+
+  @include tablet-max {
+    width: 100%;
+  }
+}
+
+.masselot-description {
+  font-size: 2.4rem;
+
+  @include desktop-masselot-max {
+    font-size: 2rem;
+  }
+
+  @include tablet-max {
+    margin-bottom: 0;
+  }
+}
