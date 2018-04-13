@@ -168,6 +168,10 @@
     @include desktop {
       // font-size: rem(;
     }
+    @include mobile-masselot {
+      // font-size: rem(;
+      font-size: 2.5rem;
+    }
   }
   .zone-a__logo {
     @include mobile {
