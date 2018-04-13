@@ -1,0 +1,42 @@
+.zone-e {
+  color: #fff;
+  text-shadow: 0 0 2rem #ffffff, 0 0 .8rem #ffffff;
+  font-family: "Klavika-regular";
+    //font-family: $font-regular;
+}
+
+.zone-e__title,
+.zone-e .card__content .content__title  {
+  font-size: rem(20);
+  text-transform: uppercase;
+}
+
+.zone-e__title {
+  text-align: center;
+}
+
+.zone-e .card {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 8px;
+  border: .3rem solid #ff9d4b;
+  box-shadow: 0 0 10px 0 #ff9d4b, inset 0 0 10px 0 #ff9d4b;
+}
+
+.zone-e .card__img {
+  width: 30%;
+}
+
+.zone-e .card__content {
+  width: 70%;
+}
+
+.zone-e .card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.zone-e .card__content .content__paragraph {
+  font-size: rem(16);
+}
