@@ -4,6 +4,14 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  @include tablet-max {
+    margin-top: 8rem;
+  }
+
+  @include mobile-masselot {
+    margin-top: 5rem;
+  }
 }
 
 .footer::after {
@@ -25,11 +33,19 @@
 .footer__title {
   font-size: 3.6rem;
   margin: 1em 0 0 0;
+
+  @include mobile-masselot {
+    font-size: 2rem;
+  }
 }
 
 .footer__subtitle {
   font-size: 3rem;
   margin-top: 1rem;
+
+  @include mobile-masselot {
+    font-size: 2rem;
+  }
 }
 
 .footer__CTA {
@@ -42,4 +58,9 @@
   background: #ff9d4b;
   border: .3rem solid #ff9d4b;
   text-shadow: 0 0 2rem #ffffff, 0 0 .8rem #ffffff;
+
+  @include mobile-masselot {
+    font-size: 2rem;
+    margin: 4rem auto;
+  }
 }

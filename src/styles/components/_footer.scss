@@ -16,6 +16,11 @@
 
   @include tablet-max {
     flex-direction: column;
+    margin-top: 6rem;
+  }
+
+  @include mobile-masselot {
+    margin-top: 4rem;
   }
 }
 
