@@ -1,4 +1,5 @@
 .burger {
+  padding-top: 2rem;
   position: relative;
   right: rem(10);
   display: flex;
@@ -14,9 +15,15 @@
   }
 }
 .closeMenu {
-  position: relative;
+  position: absolute;
+  top: 4rem;
+  right: 8%;
   z-index: 999;
-  margin-bottom: rem(30);
+
+  @include mobile-masselot {
+    right: 6%;
+  }
+  // margin-bottom: rem(30);
   cursor: pointer;
   .closeMenu__line {
     display: block;
@@ -35,7 +42,8 @@
 
 .zone-a {
   @include mobile {
-    width: 100%;
+    width: 90%;
+    margin: auto;
   }
   display: flex;
   width: 90%;
@@ -88,15 +96,15 @@
       flex-flow: column wrap;
       align-items: center;
       justify-content: center;
-      background-color: pink;
+      background-image: url('../images/background.jpg');
       position: absolute;
       top: -13px;
-      width: 100%;
-      height: 100vh;
-      transform: translateX(-100%);
+      width: 115%;
+      height: 103vh;
+      transform: translateX(-108%);
       transition: $transition-out-hover;
       &.is-active {
-        transform: translateX(0);
+        transform: translateX(-8%);
         transition: $transition-out-hover;
       }
     }
@@ -119,6 +127,7 @@
     }
   }
   .zone-a__nav__link {
+    cursor: pointer;
     list-style: none;
     color: $white;
     font-size: rem(45);
@@ -170,19 +179,30 @@
     text-align: left;
     text-shadow: 0 0 20px $white, 0 0 8px $white;
     @include desktop {
-      width: 60%;
-      padding: rem(20) rem(200);
+      width: 55%;
+      padding: 2rem 0;
+    }
+    @include tablet-max {
+      padding: 2rem 1rem;
     }
   }
   .zone-a__content__text__title {
-    font-size: rem(30);
+    text-transform: uppercase;
+    font-size: 3.2rem;
     color: $white;
-    font-family: $font-medium;
+    font-family: $font-regular;
+    @include tablet-max {
+      margin-bottom: 1rem;
+    }
   }
   .zone-a__content__text__content {
-    font-size: rem(20);
+    font-size: 2.6rem;
     color: $white;
-    font-family: $font-medium;
+    font-family: $font-regular;
+
+    @include tablet-max {
+      font-size: 2rem;
+    }
   }
   .zone-a__logo__container {
     display: flex;
@@ -203,7 +223,9 @@
       width: 40%;
     }
     img {
+      display: block;
       width: 100%;
+      max-width: 100%;
       @include desktop {
         width: auto;
       }
@@ -211,6 +233,7 @@
   }
   .zone-a__article {
     display: flex;
+    justify-content: space-between;
     flex-flow: row wrap;
     align-items: center;
   }
