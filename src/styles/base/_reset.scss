@@ -1,7 +1,3 @@
-body {
-  background-color: $black;
-  overflow-x: hidden;
-}
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +5,11 @@ body {
 
 *, *:before, *:after {
   box-sizing: border-box;
+}
+
+body {
+  background-image: url('../images/background.jpg');
+  overflow-x: hidden;
 }
 
 html {
