@@ -47,6 +47,7 @@
   }
   display: flex;
   width: 90%;
+  max-width: 130rem;
   margin: rem(20) auto;
   .zone-a__nav {
     @include mobile {
