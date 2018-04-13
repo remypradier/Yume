@@ -7,7 +7,7 @@ var slider = new Swiper('.swiper-container', {
   initialSlide: 2,
   centeredSlides: true,
   grabCursor: true,
-  loop: true,
+  //loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
