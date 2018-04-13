@@ -60,7 +60,22 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    padding: rem(20) 0;
+    .zone-a__nav__list {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      height: rem(80);
+      padding: 0 rem(20);
+      transition: $transition-out-hover;
+      &.is-active {
+        background-color: $main-orange;
+      }
+      cursor: pointer;
+      &:hover {
+        background-color: $main-orange;
+        transition: $transition-out-hover;
+      }
+    }
   }
   .zone-a__nav__container--mobile {
     display: block;
