@@ -6,6 +6,7 @@ $media-query: "only screen and";
 
 // Queries string
 $mobile: "#{$media-query} (max-width: #{$breakpoint-tablet - 1})";
+$masselot-mobile: "#{$media-query} (max-width: 480px)";
 $phablet: "#{$media-query} (min-width: #{$breakpoint-phablet})";
 $tablet: "#{$media-query} (min-width: #{$breakpoint-tablet})";
 $tablet-max: "#{$media-query} (max-width: 768px)";
@@ -17,6 +18,11 @@ $desktop-header: "#{$media-query} (min-width: #{$breakpoint-desktop-header})";
 $desktop-xl: "#{$media-query} (min-width: #{$breakpoint-desktop-xl})";
 
 // Mixins media queries
+@mixin mobile-masselot {
+  @media #{$masselot-mobile} {
+    @content;
+  }
+}
 @mixin mobile {
   @media #{$mobile} {
     @content;

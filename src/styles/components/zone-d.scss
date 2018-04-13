@@ -16,6 +16,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include tablet-max {
+    justify-content: space-between;
+  }
+
+  @include mobile-masselot {
+    justify-content: center;
+  }
 }
 
 .zone-d__img {
@@ -30,5 +38,31 @@
     max-width: 30rem;
     width: 30%;
     margin: 0 4rem;
+
+    @include tablet-max {
+      margin: 0;
+      width: 45%;
+    }
+
+    @include mobile-masselot {
+      width: 100%;
+    }
+  }
+}
+
+
+.zone-d__img-tablet {
+  @include tablet-max {
+    display: none;
+  }
+}
+
+.zone-d__img-mobile {
+  @include tablet-max {
+    width: 45%;
+    max-width: 100%;
+  }
+  @include mobile-masselot {
+    display: none;
   }
 }
